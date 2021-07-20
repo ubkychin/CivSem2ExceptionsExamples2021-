@@ -31,6 +31,7 @@ namespace CivSem2ExceptionsExamples2021
     }
 
     class NegativeNumberException: Exception {
-        public NegativeNumberException(string message): base(message) { }
+        public NegativeNumberException(): base("Negative number detected") {}
+        public NegativeNumberException(string message): base(message) {}
     }
 }
